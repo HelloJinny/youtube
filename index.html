@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Youtube Mobile</title>
+    <script src="main.js" defer></script>
 </head>
 <body>  
     <!-- Header -->
@@ -24,88 +28,99 @@
         <video controls src="video/video.mp4"></video>
     </section>
 
-    <!-- Video Info -->
-    <section class="info">
-        <!-- Metadata -->
-        <div class="metadata">
-            <ul class="hashtags">
-                <li>#hashtags01</li>
-                <li>#hashtags02</li>
-                <li>#hashtags03</li>
-            </ul>
-            <div class="titleAndBtn">
-                <span class="title">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Sint debitis adipisci, impedit, eos ipsa quam ex, 
-                    magnam non illo qui reprehenderit illum! 
-                    In amet velit maiores delectus est deserunt laudantium.
-                </span>
+    <div class="infoAndUpNext">
 
-                <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
-            </div>
+        <!-- Video Info -->
+        <section class="info">
 
-            <div class="views">
+            <!-- Metadata -->
+            <div class="metadata">
+                <ul class="hashtags">
+                    <li>#hashtags01</li>
+                    <li>#hashtags02</li>
+                    <li>#hashtags03</li>
+                </ul>
+                <div class="titleAndBtn">
+                    <span class="title clamp">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Sint debitis adipisci, impedit, eos ipsa quam ex, 
+                        magnam non illo qui reprehenderit illum! 
+                        In amet velit maiores delectus est deserunt laudantium.
+                    </span>
+
+                    <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
+                </div>
+
                 <span class="views">1M views 1 months ago</span>
             </div>
-        </div>
 
-        <!-- Actions -->
-        <div class="actions">
-            <li><button><i class="fas fa-thumbs-up"></i></button></li>
-            <li><button><i class="fas fa-thumbs-down"></i></button></li>
-            <li><button><i class="fas fa-share"></i></button></li>
-            <li><button><i class="fas fa-plus"></i></button></li>
-            <li><button><i class="fab fa-font-awesome-flag"></i></button></li>
-        </div>
-
-        <!-- Channel Descripton -->
-        <div class="channel">
-            <div class="metadata">
-                <img src="images/profile.jpg" alt="">        
-                <div class="info">
-                    <span class="name">우리집창식이</span>
-                    <span class="subscribe">1M subscribe</span>
-                </div>
+            <!-- Actions -->
+            <div class="actions">
+                <li><button><i class="active fas fa-thumbs-up"></i></button></li>
+                <li><button><i class="fas fa-thumbs-down"></i></button></li>
+                <li><button><i class="fas fa-share"></i></button></li>
+                <li><button><i class="fas fa-plus"></i></button></li>
+                <li><button><i class="fab fa-font-awesome-flag"></i></button></li>
             </div>
 
-            <button class="subscribe">subscribe</button>
-        </div>
-    </section>
-
-    <section class="upNext">
-        <span class="title">Up next</span>
-        <ul>
-            <li class="item">
-                <img src="images/1.PNG" alt="">
-                <div class="info">
-                    <span class="title">Title1</span>
-                    <span class="name">홍길동</span>
-                    <span class="views">views</span>
+            <!-- Channel Descripton -->
+            <div class="channel">
+                <div class="metadata">
+                    <img src="images/profile.jpg" alt="">        
+                    <div class="info">
+                        <span class="name">우리집창식이</span>
+                        <span class="subscribe">1M subscribe</span>
+                    </div>
                 </div>
-                <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
-            </li>
 
-            <li class="item">
-                <img src="images/2.PNG" alt="">
-                <div class="info">
-                    <span class="title">Title2</span>
-                    <span class="name">이순신</span>
-                    <span class="views">views</span>
-                </div>
-                <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
-            </li>
+                <button class="subscribe">subscribe</button>
+            </div>
+        </section>
 
-            <li class="item">
-                <img src="images/3.PNG" alt="">
-                <div class="info">
-                    <span class="title">Title3</span>
-                    <span class="name">강감찬</span>
-                    <span class="views">views</span>
-                </div>
-                <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
-            </li>
-        </ul>
-    </section>
-    
+        <!-- Up Next -->
+        <section class="upNext">
+            <span class="title">Up next</span>
+            <ul>
+                <li class="item">
+                    <div class="img">
+                        <img src="images/1.PNG" alt="">
+                    </div>
+
+                    <div class="info">
+                        <span class="title">Title1</span>
+                        <span class="name">홍길동</span>
+                        <span class="views">views</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
+                </li>
+
+                <li class="item">
+                    <div class="img">
+                        <img src="images/2.PNG" alt="">
+                    </div>
+
+                    <div class="info">
+                        <span class="title">Title2</span>
+                        <span class="name">이순신</span>
+                        <span class="views">views</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
+                </li>
+
+                <li class="item">
+                    <div class="img">
+                        <img src="images/3.PNG" alt="">
+                    </div>
+
+                    <div class="info">
+                        <span class="title">Title3</span>
+                        <span class="name">강감찬</span>
+                        <span class="views">views</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
+                </li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
