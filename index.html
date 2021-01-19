@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Youtube Mobile</title>
+    <title>Youtube</title>
+    <script src="https://kit.fontawesome.com/2d323a629b.js" crossorigin="anonymous"></script>
     <script src="main.js" defer></script>
 </head>
+
 <body>  
     <!-- Header -->
     <header>
@@ -28,6 +29,7 @@
         <video controls src="video/video.mp4"></video>
     </section>
 
+    <!-- Video info & Up next-->
     <div class="infoAndUpNext">
 
         <!-- Video Info -->
@@ -36,40 +38,64 @@
             <!-- Metadata -->
             <div class="metadata">
                 <ul class="hashtags">
-                    <li>#hashtags01</li>
-                    <li>#hashtags02</li>
-                    <li>#hashtags03</li>
+                    <li>#우리집</li>
+                    <li>#귀요미</li>
+                    <li>#창식이</li>
                 </ul>
                 <div class="titleAndBtn">
                     <span class="title clamp">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Sint debitis adipisci, impedit, eos ipsa quam ex, 
-                        magnam non illo qui reprehenderit illum! 
-                        In amet velit maiores delectus est deserunt laudantium.
+                        귀여움 MAX 💕 뛰는 창식이 x5
                     </span>
 
-                    <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
+                    <button class="moreBtn">
+                        <i class="fas fa-caret-down"></i>
+                    </button>
                 </div>
 
-                <span class="views">1M views 1 months ago</span>
+                <span class="views">550K views · 3 days ago</span>
             </div>
 
-            <!-- Actions -->
+            <!-- Actions buttons -->
             <div class="actions">
-                <li><button><i class="active fas fa-thumbs-up"></i></button></li>
-                <li><button><i class="fas fa-thumbs-down"></i></button></li>
-                <li><button><i class="fas fa-share"></i></button></li>
-                <li><button><i class="fas fa-plus"></i></button></li>
-                <li><button><i class="fab fa-font-awesome-flag"></i></button></li>
+                <li>
+                    <button>
+                        <i class="active fas fa-thumbs-up"></i>
+                        <span>54K</span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class="fas fa-thumbs-down"></i>
+                        <span>482</span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class="fas fa-share"></i>
+                        <span>Share</span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class="fas fa-plus"></i>
+                        <span>Save</span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class="fab fa-font-awesome-flag"></i>
+                        <span>Report</span>
+                    </button>
+                </li>
             </div>
 
-            <!-- Channel Descripton -->
+            <!-- Channel descripton -->
             <div class="channel">
                 <div class="metadata">
                     <img src="images/profile.jpg" alt="">        
                     <div class="info">
                         <span class="name">우리집창식이</span>
-                        <span class="subscribe">1M subscribe</span>
+                        <span class="subscribers">16.8M subscribe</span>
                     </div>
                 </div>
 
@@ -79,43 +105,43 @@
 
         <!-- Up Next -->
         <section class="upNext">
-            <span class="title">Up next</span>
+            <!-- <span class="title">Up Next</span> -->
             <ul>
                 <li class="item">
                     <div class="img">
-                        <img src="images/1.PNG" alt="">
+                        <img src="images/1.jpg" alt="">
                     </div>
 
-                    <div class="info">
-                        <span class="title">Title1</span>
-                        <span class="name">홍길동</span>
-                        <span class="views">views</span>
-                    </div>
-                    <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
-                </li>
-
-                <li class="item">
-                    <div class="img">
-                        <img src="images/2.PNG" alt="">
-                    </div>
-
-                    <div class="info">
-                        <span class="title">Title2</span>
-                        <span class="name">이순신</span>
-                        <span class="views">views</span>
+                    <div class="itemInfo">
+                        <span class="title">손에 매달린 창식이</span>
+                        <span class="name">우리집창식이</span>
+                        <span class="views">86K views</span>
                     </div>
                     <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
                 </li>
 
                 <li class="item">
                     <div class="img">
-                        <img src="images/3.PNG" alt="">
+                        <img src="images/2.jpg" alt="">
                     </div>
 
-                    <div class="info">
-                        <span class="title">Title3</span>
-                        <span class="name">강감찬</span>
-                        <span class="views">views</span>
+                    <div class="itemInfo">
+                        <span class="title">멍때리는 창식이</span>
+                        <span class="name">우리집창식이</span>
+                        <span class="views">7.4M views</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
+                </li>
+
+                <li class="item">
+                    <div class="img">
+                        <img src="images/3.jpg" alt="">
+                    </div>
+
+                    <div class="itemInfo">
+                        <span class="title">내 손 안에 창식이 있다.</span>
+                        <span class="name">우리집창식이</span>
+                        <span class="views">11M views</span>
                     </div>
                     <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
                 </li>
